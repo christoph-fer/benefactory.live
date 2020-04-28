@@ -1,12 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: Jet Brains;
+  src: url("../fonts/JetBrains Mono/JetBrainsMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: Uni Sans;
+  src: url("../fonts/Uni Sans/UniSansDemo-HeavyCAPS.otf");
+}
+
+@font-face {
+  font-family: Jet Brains;
+  src: url("../fonts/JetBrains Mono/JetBrainsMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: Uni Sans;
+  src: url("../fonts/Uni Sans/UniSansDemo-HeavyCAPS.otf");
+}
+
+.bene-primary-button {
+  font-family: "Jet Brains";
+  background-color: #ba3027;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1px;
+  padding: 12px 23px;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px #ba312730;
+          box-shadow: 4px 4px #ba312730;
+  letter-spacing: 0.05em;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.bene-primary-button:hover {
+  background-color: #a52820;
+}
+
 body {
   margin: 0;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
 .intro {
   background-color: #ba3027;
-  height: 100vh;
+  height: 920px;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.intro .intro-content {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  height: 640px;
+}
+
+.intro .intro-content .brands-x-crisis {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .intro .header {
@@ -17,7 +73,7 @@ body {
   grid-gap: 100px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.05em;
   text-align: center;
   width: -webkit-fit-content;
@@ -34,5 +90,263 @@ body {
 
 .intro .header .bene-logo {
   height: 134px;
+}
+
+.cred {
+  background-color: #f4f4e8;
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0px;
+  padding: 2rem calc((100% - 1280px) / 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cred div {
+  padding: 0px 30px;
+}
+
+.cred .quote {
+  text-align: center;
+}
+
+.cred .quote p {
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+}
+
+.cred .quote p span {
+  color: #ba3027;
+}
+
+.cred .quote h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+}
+
+.cred .quote h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  color: #ba3027;
+}
+
+.cred .quote img {
+  height: 25px;
+}
+
+.campaigns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 4rem calc((100% - 1280px) / 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left h1 {
+  font-family: "Uni Sans";
+  font-size: 58px;
+  color: #ba3027;
+}
+
+.left p {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  max-width: 420px;
+  margin-bottom: 40px;
+}
+
+.left h2 {
+  font-family: "Uni Sans";
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: black;
+  opacity: 0.6;
+  margin-top: 100px;
+}
+
+.how-we-work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 4rem calc((100% - 1280px) / 2);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f4e8;
+}
+
+.how-we-work .act-now-checkout-phone {
+  background-image: url(../assets/act-now-checkout-phone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+.campaign-list {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 420px;
+}
+
+.campaign-list p {
+  font-family: "Uni Sans";
+  color: #ba3027;
+  font-size: 13px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.campaign-list li {
+  font-family: "Uni Sans";
+  list-style-type: none;
+  opacity: 0.65;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 10px 0px;
+  -webkit-transition: 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.campaign-list li:hover {
+  font-size: 32px;
+  opacity: 1;
+}
+
+.campaign-list li span {
+  color: #ba3027;
+}
+
+.collabs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 4rem calc((100% - 1280px) / 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collabs .collabs-pictures {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (5vw)[4];
+      grid-template-rows: repeat(4, 5vw);
+  grid-auto-flow: dense;
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+
+.collabs .collabs-pictures .a-a {
+  background-image: url("../assets/kerry 2.jpg");
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  background-size: cover;
+  background-position: center;
+}
+
+.collabs .collabs-pictures .a-b {
+  background-image: url("../assets/iha.jpg");
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  background-size: cover;
+  background-position: center;
+}
+
+.collabs .collabs-pictures .a-c {
+  background-image: url("../assets/swiggy.png");
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 7;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  background-size: cover;
+  background-position: center;
+}
+
+.collabs .collabs-pictures .a-d {
+  background-image: url("../assets/ilana 3.jpeg");
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  background-size: cover;
+  background-position: center;
+}
+
+.collabs .collabs-pictures .b-a {
+  background-image: url("../assets/propshop.jpeg");
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.collabs .collabs-pictures .b-b {
+  background-image: url("../assets/girl-sun.png");
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 6;
+  background-size: cover;
+  background-position: center;
+}
+
+.collabs .collabs-pictures .b-c {
+  background-image: url("../assets/prabal .jpg");
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 7;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  background-size: cover;
+  background-position: center;
+}
+
+.collabs .collabs-pictures .b-d {
+  background-image: url("../assets/nykaa - red option.png");
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 9;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 6;
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=bene_style.css.map */

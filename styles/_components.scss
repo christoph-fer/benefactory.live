@@ -1,0 +1,18 @@
+@import "./variables";
+
+.bene-primary-button {
+  font-family: $bene_font_5;
+  background-color: $bene_red;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1px;
+  padding: 12px 23px;
+  cursor: pointer;
+  box-shadow: 4px 4px $bene_red_alpha;
+  letter-spacing: 0.05em;
+  transition: 300ms;
+  &:hover {
+    background-color: $bene_red_2;
+  }
+}

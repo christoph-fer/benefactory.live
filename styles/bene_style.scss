@@ -1,29 +1,238 @@
 @import "./variables";
+@import "./components";
 
 body {
   margin: 0;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 .intro {
   background-color: $bene_red;
-  height: 100vh;
+  height: 920px;
   justify-self: center;
+  .intro-content {
+    display: grid;
+    justify-items: center;
+    height: 640px;
+    .brands-x-crisis {
+      align-self: flex-end;
+    }
+  }
   .header {
     display: grid;
     grid-template-columns: auto auto 380px auto auto;
     grid-gap: 100px;
-    font-family: $tabs_font;
+    font-family: $bene_font_4;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 0.05em;
     text-align: center;
     width: fit-content;
     height: 150px;
-
     align-items: center;
     color: white;
     @include margin_align();
     .bene-logo {
       height: 134px;
+    }
+  }
+}
+.cred {
+  background-color: $bene_beige-2;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 100px 0px;
+  padding: 2rem calc((100% - 1280px) / 2);
+  @include margin_align();
+
+  div {
+    padding: 0px 30px;
+  }
+  .quote {
+    text-align: center;
+
+    p {
+      font-family: $bene_font_3;
+      font-size: 11px;
+      span {
+        color: $bene_red;
+      }
+    }
+    h1 {
+      font-family: $bene_font_2;
+      font-size: 22px;
+    }
+    h2 {
+      font-family: $bene_font_3;
+      font-size: 15px;
+      color: $bene_red;
+    }
+    img {
+      height: 25px;
+    }
+  }
+}
+.campaigns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem calc((100% - 1280px) / 2);
+  @include margin_align();
+}
+
+.left {
+  h1 {
+    font-family: $bene_font_1;
+    font-size: 58px;
+    color: $bene_red;
+  }
+  p {
+    font-family: $bene_font_3;
+    font-size: 14px;
+    max-width: 420px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-family: $bene_font_1;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: black;
+    opacity: 0.6;
+    margin-top: 100px;
+  }
+}
+
+.how-we-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem calc((100% - 1280px) / 2);
+  @include margin_align();
+  background-color: $bene_beige-2;
+  .act-now-checkout-phone {
+    background-image: url(../assets/act-now-checkout-phone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+  }
+}
+
+.campaign-list {
+  align-self: center;
+  justify-self: center;
+  width: 420px;
+  p {
+    font-family: $bene_font_1;
+    color: $bene_red;
+    font-size: 13px;
+    margin-block-end: 0px;
+  }
+  li {
+    font-family: $bene_font_1;
+    list-style-type: none;
+    opacity: 0.65;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 10px 0px;
+    transition: 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    backface-visibility: hidden;
+
+    &:hover {
+      font-size: 32px;
+      opacity: 1;
+    }
+    span {
+      color: $bene_red;
+    }
+  }
+}
+
+.collabs {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4rem calc((100% - 1280px) / 2);
+  @include margin_align();
+  .collabs-pictures {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 5vw);
+    grid-auto-flow: dense;
+    grid-gap: 50px;
+    margin-top: 50px;
+    .a-a {
+      background-image: url("../assets/kerry\ 2.jpg");
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-size: cover;
+      background-position: center;
+    }
+    .a-b {
+      background-image: url("../assets/iha.jpg");
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      background-size: cover;
+      background-position: center;
+    }
+    .a-c {
+      background-image: url("../assets/swiggy.png");
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-size: cover;
+      background-position: center;
+    }
+    .a-d {
+      background-image: url("../assets/ilana\ 3.jpeg");
+      grid-column-start: 7;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .b-a {
+      background-image: url("../assets/propshop.jpeg");
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      background-size: cover;
+      background-position: center;
+      transition: 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .b-b {
+      background-image: url("../assets/girl-sun.png");
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      background-size: cover;
+      background-position: center;
+    }
+    .b-c {
+      background-image: url("../assets/prabal\ .jpg");
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      background-size: cover;
+      background-position: center;
+    }
+    .b-d {
+      background-image: url("../assets/nykaa\ -\ red\ option.png");
+      grid-column-start: 7;
+      grid-column-end: 9;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      background-size: cover;
+      background-position: center;
     }
   }
 }
