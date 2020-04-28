@@ -1,0 +1,29 @@
+@import "./variables";
+
+body {
+  margin: 0;
+}
+.intro {
+  background-color: $bene_red;
+  height: 100vh;
+  justify-self: center;
+  .header {
+    display: grid;
+    grid-template-columns: auto auto 380px auto auto;
+    grid-gap: 100px;
+    font-family: $tabs_font;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: fit-content;
+    height: 150px;
+
+    align-items: center;
+    color: white;
+    @include margin_align();
+    .bene-logo {
+      height: 134px;
+    }
+  }
+}
