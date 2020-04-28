@@ -2,15 +2,69 @@
   <head>
     <title>Benefactory</title>
     <link rel="stylesheet" type="text/css" href="../styles/bene_style.css" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#BA3027" />
   </head>
 
   <body>
     <div class="wrapper">
+      <div class="navbar" id="navBar">
+        <br /><br /><br /><br />
+        <a href="index.html"
+          ><span
+            style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+            >Home</span
+          ></a
+        >
+        <a href="bias.html"
+          ><span
+            style="-webkit-filter: invert(100%);
+      filter: invert(100%);"
+            >What is bias?</span
+          ></a
+        >
+        <a href="about.html"
+          ><span
+            style="-webkit-filter: invert(100%);
+      filter: invert(100%);"
+            >About Us</span
+          ></a
+        >
+        <div>
+          <a href="https://twitter.com/volv_media" target="_blank"
+            ><img
+              title="Volv on Twitter"
+              style="-webkit-filter: invert(100%);
+      filter: invert(100%);"
+              src="assets/twitter-white.png"
+          /></a>
+          <!-- <span>Follow us:</span> -->
+
+          <a href="https://www.instagram.com/volvmedia/" target="_blank"
+            ><img
+              title="Volv on Instagram"
+              src="assets/instagram-white.png"
+              style="-webkit-filter: invert(100%);
+      filter: invert(100%);"
+          /></a>
+
+          <a href="mailto:connect@volvmedia.com" target="_blank"
+            ><img
+              title="E-mail us"
+              src="assets/main-icon-white.svg"
+              style="-webkit-filter: invert(100%);
+      filter: invert(100%);"
+          /></a>
+        </div>
+
+        <!-- <input
+          class="volv-button-small"
+          type="button"
+          onclick="getOS()"
+          value="DOWNLOAD NOW - IT'S FREE"
+        /> -->
+      </div>
       <div class="intro">
         <div class="header">
           <span>ABOUT US</span>
@@ -19,9 +73,31 @@
           <span>CAMPAIGNS</span>
           <span>CONTACT</span>
         </div>
+        <div class="header-mobile">
+          
+            <div style="align-self: center;">
+              <a href="index.html"
+                ><img class="bene-logo" src="../assets/Benefactory_White.png"
+              /></a>
+            </div>
+
+            <div class="ham-menu" id="hamMenu" onclick="openNav()">
+              <img
+                style="-webkit-filter: invert(100%);
+              filter: invert(100%);"
+                src="../assets/ham_menu.svg"
+                height="13px"
+              />
+            </div>
+
+            <div class="close-menu" id="closeMenu" onclick="closeNav()" style="display: none;">
+              <img  src="../assets/close-button.svg" height="13px" />
+            </div>
+          
+        </div>
         <div class="intro-content">
           <div class="brands-x-crisis">
-            <img src="../assets/brands-x-crisis.svg" />
+            
           </div>
         </div>
       </div>
@@ -153,5 +229,22 @@
         </div>
       </div>
     </div>
+    <script>
+      function openNav() {
+        document.getElementById("navBar").style.width = "100%";
+        document.getElementById("hamMenu").style.display = "none";
+        document.getElementById("closeMenu").style.display = "grid";
+      }
+
+      function closeNav() {
+        document.getElementById("navBar").style.width = "0";
+        document.getElementById("hamMenu").style.display = "grid";
+        document.getElementById("closeMenu").style.display = "none";
+      }
+
+      // function closeNav() {
+      //     document.getElementById("mySidenav").style.width = "0";
+      // }
+    </script>
   </body>
 </html>
