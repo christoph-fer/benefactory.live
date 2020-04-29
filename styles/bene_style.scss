@@ -216,13 +216,16 @@ a {
     background-repeat: no-repeat;
     background-position: 0px;
     height: 500px;
+
+    margin-left: 10vh;
   }
 }
 
 .campaign-list {
   align-self: center;
   justify-self: center;
-  width: 420px;
+  width: 370px;
+  margin-left: 10vh;
   p {
     font-family: $bene_font_1;
     color: $bene_red;
@@ -500,6 +503,7 @@ a {
     .act-now-checkout-phone {
       background-position: center;
       margin-top: -0px;
+      margin-left: unset;
     }
   }
 
@@ -511,6 +515,7 @@ a {
     margin-top: unset;
     justify-self: center;
     width: 100%;
+    margin-left: unset;
     li {
       width: 100%;
     }

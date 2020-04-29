@@ -309,6 +309,7 @@ a {
   background-repeat: no-repeat;
   background-position: 0px;
   height: 500px;
+  margin-left: 10vh;
 }
 
 .campaign-list {
@@ -317,7 +318,8 @@ a {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 420px;
+  width: 370px;
+  margin-left: 10vh;
 }
 
 .campaign-list p {
@@ -658,6 +660,7 @@ a {
   .how-we-work .act-now-checkout-phone {
     background-position: center;
     margin-top: -0px;
+    margin-left: unset;
   }
   .campaigns {
     text-align: center;
@@ -667,6 +670,7 @@ a {
     -ms-grid-column-align: center;
         justify-self: center;
     width: 100%;
+    margin-left: unset;
   }
   .campaign-list li {
     width: 100%;
