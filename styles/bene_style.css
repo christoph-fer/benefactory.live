@@ -307,7 +307,7 @@ a {
   background-image: url(../assets/act-now-checkout-phone.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0px;
   height: 500px;
 }
 
@@ -348,6 +348,13 @@ a {
 
 .campaign-list li span {
   color: #ba3027;
+}
+
+.campaign-list ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
 }
 
 .collabs {
@@ -663,12 +670,6 @@ a {
   }
   .campaign-list li {
     width: 100%;
-  }
-  .campaign-list ul {
-    -webkit-padding-start: 0px;
-            padding-inline-start: 0px;
-    -webkit-margin-before: 0px;
-            margin-block-start: 0px;
   }
   .left p {
     width: 100%;
