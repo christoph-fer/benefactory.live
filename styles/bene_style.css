@@ -49,6 +49,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar {
   float: right;
   height: 100vh;
@@ -150,6 +155,7 @@ body {
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  margin-top: 9vh;
 }
 
 .intro .intro-content .brands-x-crisis {
@@ -158,11 +164,12 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: url(../assets/brands-x-crisis.svg);
-  width: 100%;
-  height: 75vh;
+  width: 80%;
+  height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: -30px;
+  background-size: contain;
+  margin-left: -40px;
 }
 
 .intro .header {
@@ -190,6 +197,16 @@ body {
 
 .intro .header .bene-logo {
   height: 134px;
+}
+
+.intro .header span {
+  cursor: pointer;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.intro .header span:hover {
+  opacity: 0.5;
 }
 
 .cred {
@@ -229,7 +246,8 @@ body {
 
 .cred .quote h1 {
   font-family: "Work Sans", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+  letter-spacing: 0.05rem;
 }
 
 .cred .quote h2 {
@@ -355,7 +373,7 @@ body {
 }
 
 .collabs .collabs-pictures .a-a {
-  background-image: url("../assets/kerry 2.jpg");
+  background-image: url("../assets/iha.jpg");
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -367,7 +385,7 @@ body {
 }
 
 .collabs .collabs-pictures .a-b {
-  background-image: url("../assets/iha.jpg");
+  background-image: url("../assets/kerry 2.jpg");
   -ms-grid-column: 3;
       grid-column-start: 3;
   grid-column-end: 5;
@@ -403,7 +421,7 @@ body {
 }
 
 .collabs .collabs-pictures .b-a {
-  background-image: url("../assets/propshop.jpeg");
+  background-image: url("../assets/girl-sun.png");
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -417,7 +435,7 @@ body {
 }
 
 .collabs .collabs-pictures .b-b {
-  background-image: url("../assets/girl-sun.png");
+  background-image: url("../assets/propshop.jpeg");
   -ms-grid-column: 3;
       grid-column-start: 3;
   grid-column-end: 5;
@@ -435,7 +453,7 @@ body {
   grid-column-end: 7;
   -ms-grid-row: 3;
       grid-row-start: 3;
-  grid-row-end: 5;
+  grid-row-end: 7;
   background-size: cover;
   background-position: center;
 }
@@ -491,6 +509,21 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
+  .how-we-work {
+    padding: 4rem 7rem;
+  }
+  .campaigns {
+    padding: 4rem 7rem;
+  }
+  .collabs {
+    padding: 4rem 7rem;
+  }
+  .bene-video {
+    padding: 4rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
   .how-we-work {
     padding: 4rem;
   }
@@ -561,7 +594,6 @@ body {
     display: -ms-grid;
     display: grid;
     justify-items: center;
-    height: 80vh;
   }
   .intro .intro-content .brands-x-crisis {
     -ms-flex-item-align: end;
@@ -732,6 +764,7 @@ body {
     display: -ms-grid;
     display: grid;
     justify-items: center;
+    margin-top: 4vh;
   }
   .intro .intro-content .brands-x-crisis {
     -ms-flex-item-align: center;
