@@ -420,6 +420,12 @@ a {
 }
 
 @media only screen and (max-width: 1280px) {
+  .how-we-work {
+    .act-now-checkout-phone {
+      margin-left: 20vh;
+      margin: unset;
+    }
+  }
   .intro {
     background-color: $bene_red;
 
@@ -432,6 +438,7 @@ a {
         align-self: flex-end;
       }
     }
+
     .header {
       display: grid;
       grid-template-columns: auto auto 380px auto auto;
@@ -496,6 +503,7 @@ a {
     .act-now-checkout-phone {
       background-position: right;
       margin-top: -100px;
+      height: 60vh;
     }
   }
   .campaigns {
@@ -579,6 +587,9 @@ a {
       h2 {
         margin-bottom: -10px;
       }
+    }
+    .act-now-checkout-phone {
+      margin: 50px 0px 30px 0px;
     }
   }
   .campaigns {
