@@ -48,7 +48,7 @@ a {
   }
   div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: fit-content;
     width: 250px;
   }
@@ -74,6 +74,15 @@ a {
       }
     }
   }
+}
+
+.contact-links {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+  position: absolute;
+  right: 70px;
+  top: 40vh;
 }
 
 .ham-menu {
@@ -215,9 +224,8 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0px;
-    height: 500px;
-
-    margin-left: 10vh;
+    margin: 30px;
+    margin-left: 15vh;
   }
 }
 
@@ -266,7 +274,7 @@ a {
   .collabs-pictures {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 5vw);
+    grid-template-rows: repeat(6, 5vw);
     grid-auto-flow: dense;
     grid-gap: 50px;
     margin-top: 50px;
@@ -312,7 +320,7 @@ a {
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 3;
-      grid-row-end: 5;
+      grid-row-end: 6;
       background-size: cover;
       background-position: center;
       transition: 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -331,7 +339,7 @@ a {
       grid-column-start: 5;
       grid-column-end: 7;
       grid-row-start: 3;
-      grid-row-end: 7;
+      grid-row-end: 6;
       background-size: cover;
       background-position: center;
     }
@@ -448,6 +456,9 @@ a {
 @media only screen and (max-width: 960px) {
   .header-mobile {
     display: grid;
+  }
+  .contact-links {
+    display: none;
   }
   .intro {
     background-color: $bene_red;
